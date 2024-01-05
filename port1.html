@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,700,0,200"
+    />
+    <script
+      src="https://kit.fontawesome.com/2e40ca149e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="img/logo.png" alt="logo" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header" class="active" style="--navAni:1">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Service</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <h1>
+            Hello, I'm <span>Shashidhar</span><br />
+          </h1><br>
+          <p>Frontend Web Developer</p><br>
+          <button type="contact" class="btn btn2"><a href="#services">More about me</a></button>
+          
+        </div>
+      </div>
+    </div>
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I am Graduated from Jaya Prakash Narayan college of Engineering in the stream of computer science engineering.I had 
+              been working hard to strengthen my technical skills and I excited to embark on a journey in the dynamic field of web development.
+              I have honed my skills in HTML, CSS, and JavaScript during my academic journey, and I am eager to apply my 
+              knowledge to real-world projects and am constantly learning the skills that are not only current but also at the cutting edge of web development.
+              
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Web Developement</span><br />Designing Websites
+                  (Frontend)
+                </li>
+                <li>
+                  <span>Programming Languages</span><br />C, Core Java, Python
+                  
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Dec 2023 - Present</span><br />Web Developer Intern
+                  (Remote) at Bharat Intern
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2019 - 2023</span><br />Bachlor of Technology in
+                  Computer Science Engineering from Jpnce.
+                  - Mbnr
+                </li>
+                <li>
+                  <span>2017 - 2019</span><br />Intermediate
+                  from Sri Chaitanya junior college - Hyderabad
+                </li>
+                <li>
+                  <span>2017</span><br />Completed SSC 
+                  from New Rishi Concept school from state Board - Mbnr
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Skills</h1>
+        <div class="services-list">
+          <div>
+            <span class="material-symbols-outlined"> code </span>
+            <h2>Web Development</h2>
+            <p>
+              I Enjoy Designing Websites using HTML, CSS and JS. Basically I
+              Design Frontend of a Good Looking Website.
+            </p>
+            <a href="#"><span class="learn-more-btn">Learn More</span></a>
+          </div>
+          <div>
+            <span class="material-symbols-outlined"> code </span>
+            <h2>Java </h2>
+            <p>
+              I am good at the Application Developing using Java programing.
+              
+            </p>
+            <a href="#"><span class="learn-more-btn">Learn More</span></a>
+          </div>
+          <div>
+            <span class="material-symbols-outlined"> code </span>
+            <h2>Python</h2>
+            <p>
+              I am good at python programing and also completed python essentials in cisco networing academy.
+              
+            </p>
+            <a href="#"><span class="learn-more-btn">Learn More</span></a>
+          </div>
+          <div>
+            <span class="material-symbols-outlined"> code </span>
+            <h2>SQL</h2>
+            <p>
+              I am good at basics of SQL with creating and querying databases.
+              
+            </p>
+            <a href="#"><span class="learn-more-btn">Learn More</span></a>
+          </div>
+
+        </div>
+      </div>
+    </div><br><br><br><br><br>
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me...</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>contact
+              @shashidhar.2k1@gmail.com
+            </p>
+            <div class="social-icons">
+              <a href="https://www.instagram.com/shashi_2k1/"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/shashidhar kammari/"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </div>
+            <a href="img/background.png" download class="btn btn2"
+              >Get CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form>
+              <input type="text" name="Name" placeholder="Enter Your Name" />
+              <input type="text" name="Email" placeholder="Enter Your Email"required/>
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Enter Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
